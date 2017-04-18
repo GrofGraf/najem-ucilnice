@@ -1,0 +1,144 @@
+html,body{
+  margin:0;
+  padding:0;
+  background-color:#f8f8f8;
+  font-size:16px;
+}
+#page-title{
+  display:inline-block;
+}
+.navbar{
+  margin-bottom:0;
+}
+#kontakt{
+  margin-top:32px;
+  margin-bottom:60px;
+}
+.main-image{
+  background-image:url(http://all4desktop.com/data_images/original/4238051-background.jpg);
+  background-size:cover;
+  color:white;
+  position:relative;
+}
+.image-overlay{
+  position:absolute;
+  z-index:1;
+  bottom:0;
+  width:100%;
+}
+.image-overlay > div{
+  display:inline-block;
+  float:left;
+}
+.overlay-background{
+  background-color:#f8f8f8;
+  width:calc(50% - 50px);
+  height:30px;
+}
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 50px solid #f8f8f8;
+  border-right: 50px solid #f8f8f8;
+  border-top: 30px solid transparent;
+}
+/*.triangle-down.inverse {
+  border-left-color:transparent;
+  border-right-color:transparent;
+  border-top-color:#f8f8f8;
+}*/
+.success-message{
+  position:absolute;
+  top:1em;
+}
+form, .success-message{
+  opacity:1;
+  -webkit-transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -ms-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+}
+.hidden-opacity{
+  opacity:0;
+}
+.not-visible{
+  visibility:hidden;
+}
+label{
+  margin-top:16px;
+  font-size:16px;
+}
+.content-margin{
+  margin-top:30px;
+  margin-bottom:30px;
+}
+.panel-default{
+  margin-bottom:0;
+}
+.item{
+  height:632px;
+}
+.carousel img{
+  width:100%;
+  height:100% !important;
+  object-fit:cover;
+  cursor:pointer;
+}
+#google-map{
+  position:absolute;
+  top:0;
+  left:50%;
+  width:50%;
+  height:100%;
+}
+#google-calendar{
+  border:0;
+  width:800px;
+  height:600px;
+}
+footer{
+  padding:1em 0;
+}
+.modal-backdrop.in{
+  opacity:.8;
+}
+.close{
+  position:absolute;
+  z-index:1;
+  right:0;
+  color:white;
+  font-size:45px;
+  opacity:.8;
+  margin-right:20px;
+}
+.close:hover{
+  color:white;
+  opacity:1;
+}
+@media (min-width: 768px){
+  .modal-dialog {
+    margin: 100px auto;
+  }
+}
+@media (max-width: 991px){
+  #google-map{
+    position:static;
+    height:300px;
+    width:100%;
+    left:0;
+  }
+  .panel-default{
+    margin-bottom:20px;
+  }
+  #google-calendar{
+    width:600px;
+    height:450px;
+  }
+}
+@media (max-width: 767px){
+  #google-calendar{
+    width:300px;
+    height:300px;
+  }
+}
