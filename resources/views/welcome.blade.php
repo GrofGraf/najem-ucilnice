@@ -3,46 +3,41 @@
     <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
       <title>Najem ucilnic</title>
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:400,700&&subset=latin,latin-ext">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <link rel="stylesheet" href="/css/main.css">
     </head>
     <body>
       @include('partials.navbar')
       <div class="main-image">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              @include('partials.opis-storitve')
-            </div>
-            <div class="col-md-6">
-              @include('partials.kontaktni-obrazec')
+        <div class="image-overlay">
+          <div class="container" align="middle">
+            <h1>NAJEM UČILNICE</h1>
+            <div class="triangle-outer">
+              <div class="triangle-inner"></div>
             </div>
           </div>
         </div>
-        @include('partials.image-overlay')
+      </div>
+      <div align="center" id="opis-storitve">
+        @include('partials.opis-storitve')
+      </div>
+      <div class="container">
+        @include("partials.kontaktni-obrazec")
       </div>
       <div id="cenik">
         @include('partials.cenik')
       </div>
-      <div id="slike" style="position:relative;">
-        <!--div align="middle" style="position:absolute;z-index:1;width:100%;">
-          <div class="triangle-down inverse"></div>
-        </div>-->
+      <div id="slike">
         @include('partials.slike')
-        @include('partials.image-overlay')
       </div>
       <div id="koledar">
         @include('partials.koledar')
       </div>
-      <div id="o-nas" style="position:relative;background-color:green;">
-        <!--<div align="middle" style="position:relative;z-index:1;">
-          <div class="triangle-down inverse"></div>
-        </div>-->
+      <div id="o-nas">
         @include('partials.kontaktne-informacije')
-        @include('partials.google-map')
       </div>
       @include('partials.footer')
       @include('partials.image-modal')

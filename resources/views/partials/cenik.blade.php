@@ -1,76 +1,55 @@
 <div class="container" align="middle">
   <h1>
-    Cenik Najema
+    CENIK NAJEMA
     <br/>
     <small>DDV ni vključen v cene najema</small>
   </h1>
-  <div class="row content-margin">
+</div>
+<div class="container content-margin" align="middle">
+  <div class="row">
     <div class="col-sm-6 col-md-3">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4>Poldnevni <small>2-4 ure</small></h4>
-        </div>
-        <div class="panel-body">
-          <div>45 udeležencev</div>
-          <div>lcd projektor</div>
-          <div>magnetna tabla</div>
-          <div>računalnik</div>
-          <div>projektor</div>
-        </div>
-        <div class="panel-footer">
-          <h4>25€ / uro</h4>
-        </div>
+      <div class="purple-box">
+        <h3>POLDNEVNI
+          <br>
+          <small>2-4 ure</small>
+        </h3>
+        <div class="white-line"></div>
+        <h2>25
+          <sup>€/h</sup>
+        </h2>
       </div>
     </div>
     <div class="col-sm-6 col-md-3">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4>Dnevni <small>5-8 ur</small></h4>
-        </div>
-        <div class="panel-body">
-          <div>45 udeležencev</div>
-          <div>lcd projektor</div>
-          <div>magnetna tabla</div>
-          <div>računalnik</div>
-          <div>projektor</div>
-        </div>
-        <div class="panel-footer">
-          <h4>20€ / uro</h4>
-        </div>
+      <div class="purple-box">
+        <h3>DNEVNI
+          <br>
+          <small>5-8 ur</small>
+        </h3>
+        <div class="white-line"></div>
+        <h2>20
+          <sup>€/h</sup>
+        </h2>
       </div>
     </div>
     <div class="col-sm-6 col-md-3">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4>Večdnevni <small>9+ ur</small></h4>
-        </div>
-        <div class="panel-body">
-          <div>45 udeležencev</div>
-          <div>lcd projektor</div>
-          <div>magnetna tabla</div>
-          <div>računalnik</div>
-          <div>projektor</div>
-        </div>
-        <div class="panel-footer">
-          <h4>15€ / uro</h4>
-        </div>
+      <div class="purple-box">
+        <h3>VEČDNEVNI
+          <br>
+          <small>9+ ur</small>
+        </h3>
+        <div class="white-line"></div>
+        <h2>15
+          <sup>€/h</sup>
+        </h2>
       </div>
     </div>
     <div class="col-sm-6 col-md-3">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4>Dolgoročni</h4>
-        </div>
-        <div class="panel-body">
-          <div>45 udeležencev</div>
-          <div>lcd projektor</div>
-          <div>magnetna tabla</div>
-          <div>računalnik</div>
-          <div>projektor</div>
-        </div>
-        <div class="panel-footer">
-          <h4>Po dogovoru</h4>
-        </div>
+      <div class="purple-box">
+        <h3>DOLGOROČNI
+          <br><br>
+        </h3>
+        <div class="white-line"></div>
+        <h2>Po dogovoru</h2>
       </div>
     </div>
   </div>
