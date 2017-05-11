@@ -6,10 +6,15 @@ function myMap() {
   var marker = new google.maps.Marker({position:myCenter});
   marker.setMap(map);
   google.maps.event.addListener(marker,'click',function() {
-    var infowindow = new google.maps.InfoWindow({
+    /*var infowindow = new google.maps.InfoWindow({
       content:'<img src="/images/estopark-inter-es.jpeg" width="180px">'
     });
-    infowindow.open(map,marker);
+    infowindow.open(map,marker);*/
+    map.setMapTypeId("satellite");
+    map.setZoom(20);
+    map.setTilt(45);
+    map.setHeading(180);
+    //map.setCenter(marker.getPosition());
   });
 }
 function sendEnquiry(){
