@@ -10,11 +10,17 @@ function myMap() {
       content:'<img src="/images/estopark-inter-es.jpeg" width="180px">'
     });
     infowindow.open(map,marker);*/
-    map.setMapTypeId("satellite");
-    map.setZoom(20);
-    map.setTilt(45);
-    map.setHeading(180);
-    //map.setCenter(marker.getPosition());
+    if(map.getMapTypeId()=="roadmap"){
+      map.setZoom(20);
+      map.setMapTypeId("satellite");
+      map.setTilt(45);
+      map.setHeading(180);
+      map.setCenter(marker.getPosition());
+    }else{
+      map.setZoom(15);
+      map.setMapTypeId("roadmap");
+      map.setCenter(marker.getPosition());
+    }
   });
 }
 function sendEnquiry(){

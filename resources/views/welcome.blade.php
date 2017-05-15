@@ -7,7 +7,23 @@
       <title>Najem ucilnic</title>
       <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:400,700&&subset=latin,latin-ext">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css">
       <link rel="stylesheet" href="/css/main.css">
+      <style>
+        .fc-day-header{
+          background-color:rgba(157,137,186,1);
+        }
+        .fc-event{
+          border-color:rgba(157,137,186,1);
+          background-color:rgba(157,137,186,1);
+        }
+        .fc-left{
+          margin-bottom:10px;
+        }
+        .fc-day-grid-event .fc-time {
+          font-weight: normal;
+        }
+      </style>
     </head>
     <body>
       @include('partials.navbar')
@@ -42,9 +58,48 @@
       @include('partials.footer')
       @include('partials.image-modal')
 
-      <script src="/js/main.js"></script>
+
       <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/sl.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/gcal.js"></script>
+      <script src="/js/main.js"></script>
+      <script>
+      $(document).ready(function() {
+        // page is now ready, initialize the calendar...
+        $('#calendar').fullCalendar({
+            // put your options and callbacks here
+            height:"auto",
+            locale:"sl",
+            buttonText:{
+              today: 'Današnji dan',
+              month: 'mesec',
+              week: 'teden',
+              day: 'dan',
+              list: 'seznam'
+            },
+            firstDay:1,
+            defaultView:"month",
+            displayEventEnd:true,
+            timeFormat: 'H:mm',
+            /*googleCalendarApiKey: 'AIzaSyCXmTSLmZC1tEEQ7v687YoMEJ1iKs3M8B4',
+            events: {
+               googleCalendarId: 'miklavz.grafenauer@gmail.com'
+            }*/
+            eventSources: [{
+              googleCalendarApiKey: 'AIzaSyCXmTSLmZC1tEEQ7v687YoMEJ1iKs3M8B4',
+              googleCalendarId: /*'miklavz.grafenauer@gmail.com'*/'q7tmvoa5ttd6isafn1db8g16as@group.calendar.google.com',
+            }]
+            /*eventSources: [{
+                  url: 'https://www.googleapis.com/calendar/v3/calendars/miklavz.grafenauer@gmail.com/events?key=AIzaSyCXmTSLmZC1tEEQ7v687YoMEJ1iKs3M8B4', // use the `url` property
+                  color: 'yellow',    // an option!
+                  textColor: 'black'  // an option!
+            }]*/
+        })
+      });
+      </script>
       <script src="https://maps.googleapis.com/maps/api/js?key={!! env('GOOGLE_MAPS_KEY')!!}&callback=myMap"></script>
     </body>
 </html>

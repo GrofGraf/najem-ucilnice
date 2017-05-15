@@ -1,8 +1,8 @@
-<div class="container content-margin">
+<div class="container">
   <h1>Ponujamo možnost najema učilnice</h1>
   <p>Učilnica je velika 85 m2, sodobno opremljena in uporabnikom prijazna. Med odmori imajo udeleženci na voljo tudi napitke iz kavomata.</p>
 </div>
-<div class="container">
+<div class="container content-margin">
   <div class="row">
     <div class="col-sm-6 col-md-3">
       <div class="purple-box">
