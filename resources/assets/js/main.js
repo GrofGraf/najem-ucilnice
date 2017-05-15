@@ -104,3 +104,25 @@ function smoothScroll(eID) {
         leapY -= step; if (leapY < stopY) leapY = stopY; timer++;
     }
 }
+
+$(document).ready(function() {
+  $('#calendar').fullCalendar({
+      height:"auto",
+      locale:"sl",
+      buttonText:{
+        today: 'Današnji dan',
+        month: 'mesec',
+        week: 'teden',
+        day: 'dan',
+        list: 'seznam'
+      },
+      firstDay:1,
+      defaultView:"month",
+      displayEventEnd:true,
+      timeFormat: 'H:mm',
+      eventSources: [{
+        googleCalendarApiKey: 'AIzaSyCXmTSLmZC1tEEQ7v687YoMEJ1iKs3M8B4',
+        googleCalendarId: 'q7tmvoa5ttd6isafn1db8g16as@group.calendar.google.com',
+      }]
+  })
+});

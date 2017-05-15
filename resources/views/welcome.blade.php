@@ -66,40 +66,6 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/gcal.js"></script>
       <script src="/js/main.js"></script>
-      <script>
-      $(document).ready(function() {
-        // page is now ready, initialize the calendar...
-        $('#calendar').fullCalendar({
-            // put your options and callbacks here
-            height:"auto",
-            locale:"sl",
-            buttonText:{
-              today: 'Današnji dan',
-              month: 'mesec',
-              week: 'teden',
-              day: 'dan',
-              list: 'seznam'
-            },
-            firstDay:1,
-            defaultView:"month",
-            displayEventEnd:true,
-            timeFormat: 'H:mm',
-            /*googleCalendarApiKey: 'AIzaSyCXmTSLmZC1tEEQ7v687YoMEJ1iKs3M8B4',
-            events: {
-               googleCalendarId: 'miklavz.grafenauer@gmail.com'
-            }*/
-            eventSources: [{
-              googleCalendarApiKey: 'AIzaSyCXmTSLmZC1tEEQ7v687YoMEJ1iKs3M8B4',
-              googleCalendarId: /*'miklavz.grafenauer@gmail.com'*/'q7tmvoa5ttd6isafn1db8g16as@group.calendar.google.com',
-            }]
-            /*eventSources: [{
-                  url: 'https://www.googleapis.com/calendar/v3/calendars/miklavz.grafenauer@gmail.com/events?key=AIzaSyCXmTSLmZC1tEEQ7v687YoMEJ1iKs3M8B4', // use the `url` property
-                  color: 'yellow',    // an option!
-                  textColor: 'black'  // an option!
-            }]*/
-        })
-      });
-      </script>
       <script src="https://maps.googleapis.com/maps/api/js?key={!! env('GOOGLE_MAPS_KEY')!!}&callback=myMap"></script>
     </body>
 </html>
