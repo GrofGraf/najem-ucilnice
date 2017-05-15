@@ -31,6 +31,7 @@ h1{
   color:white;
   position:relative;
   height:600px;
+  margin-top:50px;
 }
 .triangle-outer{
   position:relative;
@@ -259,7 +260,7 @@ h1, .h1{
   }
   .main-image{
     height:auto;
-    min-height:100vh;
+    min-height:calc(100vh - 50px);
   }
   .main-image h1{
     margin-top:100px;
