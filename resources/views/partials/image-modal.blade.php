@@ -3,7 +3,7 @@
   <div class="modal-dialog">
     <img class="modal-content" id="image">
     <div id="caption">
-      <div class="selected" onclick="selectImage(this)">
+      <div onclick="selectImage(this)">
         <img src="{!! env('STATIC_URL') !!}/images/inter-es-najem-ucilnice-1.jpg">
       </div>
       <div onclick="selectImage(this)">

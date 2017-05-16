@@ -6,10 +6,6 @@ function myMap() {
   var marker = new google.maps.Marker({position:myCenter});
   marker.setMap(map);
   google.maps.event.addListener(marker,'click',function() {
-    /*var infowindow = new google.maps.InfoWindow({
-      content:'<img src="/images/estopark-inter-es.jpeg" width="180px">'
-    });
-    infowindow.open(map,marker);*/
     if(map.getMapTypeId()=="roadmap"){
       map.setZoom(20);
       map.setMapTypeId("satellite");
@@ -58,8 +54,18 @@ function backToContact(){
   }, 300)
 }
 
+function showImageModal(src){
+  document.getElementById('image').src=src;
+  var slideIndex=$('.carousel-inner>div.active').index();
+  var selected = document.querySelectorAll('#caption>div')[slideIndex];
+  selectImage(selected);
+}
+
 function selectImage(ev){
-  document.querySelector('#caption>div.selected').classList.remove('selected');
+  var selected=document.querySelector('#caption>div.selected');
+  if(selected){
+    selected.classList.remove('selected');
+  }
   ev.classList.add('selected');
   document.getElementById('image').src=ev.querySelector('img').src;
 }
