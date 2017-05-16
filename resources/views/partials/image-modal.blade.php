@@ -4,13 +4,13 @@
     <img class="modal-content" id="image">
     <div id="caption">
       <div class="selected" onclick="selectImage(this)">
-        <img src="/images/inter-es-najem-ucilnice-1.jpg">
+        <img src="{!! env('STATIC_URL') !!}/images/inter-es-najem-ucilnice-1.jpg">
       </div>
       <div onclick="selectImage(this)">
-        <img src="/images/inter-es-najem-ucilnice-2.jpg">
+        <img src="{!! env('STATIC_URL') !!}/images/inter-es-najem-ucilnice-2.jpg">
       </div>
       <div onclick="selectImage(this)">
-        <img src="/images/inter-es-najem-ucilnice-3.jpg">
+        <img src="{!! env('STATIC_URL') !!}/images/inter-es-najem-ucilnice-3.jpg">
       </div>
     </div>
   </div>

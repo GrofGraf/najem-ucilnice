@@ -15,7 +15,7 @@ const { mix } = require('laravel-mix');
    'resources/assets/css/bootstrap.css',
    'resources/assets/css/fullcalendar.css',
    'resources/assets/css/main.css'
- ], 'public/css/main.css');
+ ], 'public/static/css/main.css');
 
  mix.scripts([
    'resources/assets/js/jquery.js',
@@ -25,4 +25,4 @@ const { mix } = require('laravel-mix');
    'resources/assets/js/fullcalendar.js',
    'resources/assets/js/gcal.js',
    'resources/assets/js/main.js'
- ], 'public/js/main.js');
+ ], 'public/static/js/main.js');
