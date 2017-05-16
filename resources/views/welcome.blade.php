@@ -6,21 +6,6 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
       <title>Najem ucilnic</title>
       <link rel="stylesheet" href="/css/main.css">
-      <style>
-        .fc-day-header{
-          background-color:rgba(157,137,186,1);
-        }
-        .fc-event{
-          border-color:rgba(157,137,186,1);
-          background-color:rgba(157,137,186,1);
-        }
-        .fc-left{
-          margin-bottom:10px;
-        }
-        .fc-day-grid-event .fc-time {
-          font-weight: normal;
-        }
-      </style>
     </head>
     <body>
       @include('partials.navbar')

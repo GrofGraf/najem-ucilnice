@@ -2,7 +2,7 @@
   font-family: 'Oswald';
   src: url('../fonts/Oswald-Regular/Oswald-Regular.eot');
   src: url('../fonts/Oswald-Regular/Oswald-Regular.woff2') format('woff2'),
-      url('../fonts/Oswald-Regular/Oswald-Regular.ttf?#iefix') format('embedded-opentype'),
+      url('../fonts/Oswald-Regular/Oswald-Regular.eot') format('embedded-opentype'),
       url('../fonts/Oswald-Regular/Oswald-Regular.svg#latoblack') format('svg'),
       url('../fonts/Oswald-Regular/Oswald-Regular.woff') format('woff'),
       url('../fonts/Oswald-Regular/Oswald-Regular.ttf') format('truetype');
@@ -11,12 +11,12 @@
 }
 @font-face {
   font-family: 'Oswald';
-  src: url('../fonts/Oswald-Bold/Oswald-Bold.eot');
-  src: url('../fonts/Oswald-Bold/Oswald-Bold.woff2') format('woff2'),
-      url('../fonts/Oswald-Bold/Oswald-Bold.ttf?#iefix') format('embedded-opentype'),
-      url('../fonts/Oswald-Bold/Oswald-Bold.svg#latoblack') format('svg'),
-      url('../fonts/Oswald-Bold/Oswald-Bold.woff') format('woff'),
-      url('../fonts/Oswald-Bold/Oswald-Bold.ttf') format('truetype');
+  src: url('../fonts/Oswald-Medium/Oswald-Medium.eot');
+  src: url('../fonts/Oswald-Medium/Oswald-Medium.woff2') format('woff2'),
+      url('../fonts/Oswald-Medium/Oswald-Medium.eot?') format('embedded-opentype'),
+      url('../fonts/Oswald-Medium/Oswald-Medium.svg#latoblack') format('svg'),
+      url('../fonts/Oswald-Medium/Oswald-Medium.woff') format('woff'),
+      url('../fonts/Oswald-Medium/Oswald-Medium.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
@@ -56,6 +56,7 @@ h1{
   height:600px;
   margin-top:50px;
   padding-bottom:400px;
+  margin-bottom:15px;
 }
 .triangle-outer{
   position:relative;
@@ -228,7 +229,30 @@ h1, .h1{
   padding-top:30px;
   padding-bottom:20px;
 }
-
+.fc-day-header{
+  background-color:rgba(157,137,186,1);
+}
+.fc-event{
+  border-color:rgba(157,137,186,1);
+  background-color:rgba(157,137,186,1);
+}
+.fc-left{
+  margin-bottom:10px;
+}
+.fc-day-grid-event .fc-time {
+  font-weight: normal;
+}
+.fc-state-default{
+  background-image:none;
+}
+.fc-state-default.fc-corner-right{
+  border-top-right-radius:6px;
+  border-bottom-right-radius:6px;
+}
+.fc-state-default.fc-corner-left{
+  border-top-left-radius:6px;
+  border-bottom-left-radius:6px;
+}
 .form-control:focus{
   border-color:rgba(157, 137, 186, 1);
   box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(157, 137, 186, 1);
@@ -247,7 +271,7 @@ h1, .h1{
   border-color:rgba(157, 137, 186, 1);
   color:#333;
 }
-.btn:focus, .btn:active:focus{
+.btn:focus, .btn:active:focus, .fc-state-default:focus{
   outline: 5px auto #7456a1;
 }
 #kontakt{
@@ -255,16 +279,20 @@ h1, .h1{
   padding-left:15px;
   padding-right:15px;
   border-radius:6px;
+  margin-bottom:15px;
 }
 #kontakt-container{
   position:relative;
 }
 #slike{
   position:relative;
+  margin-bottom:15px;
 }
 #o-nas{
   position:relative;
   background-color:#222222;
+  padding-top:15px;
+  padding-bottom:15px;
 }
 #kontakt textarea{
   height:188px;
