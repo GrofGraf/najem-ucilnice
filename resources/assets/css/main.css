@@ -6,7 +6,7 @@
       url('../fonts/Oswald-Regular/Oswald-Regular.svg#latoblack') format('svg'),
       url('../fonts/Oswald-Regular/Oswald-Regular.woff') format('woff'),
       url('../fonts/Oswald-Regular/Oswald-Regular.ttf') format('truetype');
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
@@ -17,7 +17,7 @@
       url('../fonts/Oswald-Bold/Oswald-Bold.svg#latoblack') format('svg'),
       url('../fonts/Oswald-Bold/Oswald-Bold.woff') format('woff'),
       url('../fonts/Oswald-Bold/Oswald-Bold.ttf') format('truetype');
-  font-weight: 900;
+  font-weight: 700;
   font-style: normal;
 }
 html,body{
@@ -33,6 +33,7 @@ sup{
 }
 h1{
   font-size:46px;
+  line-height:1.1em;
 }
 #o-nas{
   color:white;
@@ -89,6 +90,7 @@ h1{
   font-size:100px;
   margin-top:200px;
   letter-spacing:0.05em;
+  line-height:1.3em;
 }
 .main-image .triangle-outer{
   position:absolute;
