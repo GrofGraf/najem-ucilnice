@@ -5,7 +5,6 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
       <title>Najem ucilnic</title>
-      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:400,700&&subset=latin,latin-ext">
       <link rel="stylesheet" href="/css/main.css">
       <style>
         .fc-day-header{
