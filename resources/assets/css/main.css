@@ -140,15 +140,18 @@ img{
   object-fit:cover;
   cursor:pointer;
 }
+#koledar{
+  padding-bottom:30px;
+}
 #calendar{
   width:800px;
-  padding-bottom:30px;
+  padding-bottom:15px;
 }
 footer{
   padding:1em 0;
 }
 .modal-backdrop.in{
-  opacity:.8;
+  opacity:.9;
 }
 .close{
   position:absolute;

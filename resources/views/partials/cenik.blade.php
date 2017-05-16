@@ -7,7 +7,7 @@
 </div>
 <div class="container content-margin" align="middle">
   <div class="row">
-    <div class="col-sm-6 col-md-3">
+    <div class="col-xs-6 col-md-3">
       <div class="purple-box">
         <h3>POLDNEVNI
           <br>
@@ -19,7 +19,7 @@
         </h2>
       </div>
     </div>
-    <div class="col-sm-6 col-md-3">
+    <div class="col-xs-6 col-md-3">
       <div class="purple-box">
         <h3>DNEVNI
           <br>
@@ -31,7 +31,7 @@
         </h2>
       </div>
     </div>
-    <div class="col-sm-6 col-md-3">
+    <div class="col-xs-6 col-md-3">
       <div class="purple-box">
         <h3>VEČDNEVNI
           <br>
@@ -43,7 +43,7 @@
         </h2>
       </div>
     </div>
-    <div class="col-sm-6 col-md-3">
+    <div class="col-xs-6 col-md-3">
       <div class="purple-box">
         <h3>DOLGOROČNI
           <br><br>
