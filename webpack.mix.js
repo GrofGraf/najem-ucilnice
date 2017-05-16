@@ -11,6 +11,18 @@ const { mix } = require('laravel-mix');
  |
  */
 
- mix.styles('resources/assets/css/main.css', 'public/css/main.css');
+ mix.styles([
+   'resources/assets/css/bootstrap.css',
+   'resources/assets/css/fullcalendar.css',
+   'resources/assets/css/main.css'
+ ], 'public/css/main.css');
 
- mix.scripts(['resources/assets/js/main.js'], 'public/js/main.js');
+ mix.scripts([
+   'resources/assets/js/jquery.js',
+   'resources/assets/js/bootstrap.js',
+   'resources/assets/js/moment.js',
+   //'resources/assets/js/sl.js',
+   'resources/assets/js/fullcalendar.js',
+   'resources/assets/js/gcal.js',
+   'resources/assets/js/main.js'
+ ], 'public/js/main.js');

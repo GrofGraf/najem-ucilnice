@@ -58,6 +58,12 @@ function backToContact(){
   }, 300)
 }
 
+function selectImage(ev){
+  document.querySelector('#caption>div.selected').classList.remove('selected');
+  ev.classList.add('selected');
+  document.getElementById('image').src=ev.querySelector('img').src;
+}
+
 //za smooth scroll
 function currentYPosition() {
     // Firefox, Chrome, Opera, Safari
