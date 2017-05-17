@@ -94,6 +94,7 @@ h1{
   background-color:white;
 }
 #carousel .triangle-outer{
+  position:absolute;
   width:35px;
   height:70px;
   top:calc(50% - 50px);
