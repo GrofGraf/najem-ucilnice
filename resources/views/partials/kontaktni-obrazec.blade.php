@@ -41,7 +41,7 @@
     </form>
 
     <div id="success-message" class="success-message not-visible hidden-opacity" align="middle">
-      <h1>Hvala za vaše sporočilo <br> <small>Odgovorili vam bomo v najkrajšem možnem času.</small></h1>
+      <h1></h1>
       <button type="submit" class="btn btn-primary btn-lg" onclick="backToContact()">NAZAJ</button>
     </div>
   </div>

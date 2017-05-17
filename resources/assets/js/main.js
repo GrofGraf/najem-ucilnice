@@ -1,9 +1,11 @@
+var marker;
+var map;
 function myMap() {
   var myCenter = new google.maps.LatLng(46.046552, 14.466915);
   var mapCanvas = document.getElementById("google-map");
   var mapOptions = {center: myCenter, zoom: 15, scrollwheel: false};
-  var map = new google.maps.Map(mapCanvas, mapOptions);
-  var marker = new google.maps.Marker({position:myCenter});
+  map = new google.maps.Map(mapCanvas, mapOptions);
+  marker = new google.maps.Marker({position:myCenter});
   marker.setMap(map);
   google.maps.event.addListener(marker,'click',function() {
     if(map.getMapTypeId()=="roadmap"){
@@ -19,6 +21,16 @@ function myMap() {
     }
   });
 }
+
+function clickLocation(){
+  smoothScroll("google-map");
+  map.setCenter(marker.getPosition());
+  marker.setAnimation(google.maps.Animation.BOUNCE);
+  setTimeout(function(){
+    marker.setAnimation(null);
+  }, 700)
+}
+
 function sendEnquiry(){
   var xhttp = new XMLHttpRequest();
   var form = document.getElementById('form');
@@ -28,15 +40,15 @@ function sendEnquiry(){
     xhttp.open("POST", "/enquire");
     xhttp.setRequestHeader('X-CSRF-TOKEN', document.getElementById('token').value);
     xhttp.onreadystatechange = function() {
-      if(xhttp.readyState == 4 && xhttp.status == 200) {
-        if(!xhttp.responseText){
-          form.classList.add('not-visible');
-          success.classList.remove('not-visible');
-          success.classList.remove('hidden-opacity');
-        }else{
-          form.classList.remove('hidden-opacity');
-        }
+      form.classList.add('not-visible');
+      if(!xhttp.responseText){
+        form.classList.add('not-visible');
+        success.querySelector('h1').innerHTML = "Hvala za vaše sporočilo.<br><small>Odgovorili vam bomo v najkrajšem možnem času.</small>"
+      }else{
+        success.querySelector('h1').innerHTML = "Preveč poskusov.<br><small>Ponovno poskusite kasneje.</small>"
       }
+      success.classList.remove('not-visible');
+      success.classList.remove('hidden-opacity');
     }
     xhttp.send(new FormData(form));
   }
@@ -61,13 +73,13 @@ function showImageModal(src){
   selectImage(selected);
 }
 
-function selectImage(ev){
+function selectImage(ev, index){
   var selected=document.querySelector('#caption>div.selected');
   if(selected){
     selected.classList.remove('selected');
   }
   ev.classList.add('selected');
-  document.getElementById('image').src=ev.querySelector('img').src;
+  document.getElementById('image').src=document.querySelectorAll('#carousel img')[index].src;;
 }
 
 //za smooth scroll

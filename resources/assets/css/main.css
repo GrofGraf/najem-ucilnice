@@ -38,6 +38,18 @@ h1{
 #o-nas{
   color:white;
 }
+#o-nas .col-sm-6{
+  padding-bottom:15px;
+}
+#o-nas a{
+  color:#fff;
+}
+#o-nas a:hover{
+  opacity:0.8;
+}
+#o-nas a:hover, #o-nas a:focus{
+  text-decoration:none;
+}
 #page-title{
   display:inline-block;
 }
@@ -80,6 +92,27 @@ h1{
   -o-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   background-color:white;
+}
+#carousel .triangle-outer{
+  width:35px;
+  height:70px;
+  top:calc(50% - 50px);
+}
+.triangle-outer.left-triangle{
+  float:left;
+  margin-left:15px;
+}
+.triangle-outer.right-triangle{
+  float:right;margin-right:15px;
+}
+#carousel .triangle-inner{
+  top:10px;
+}
+.left-triangle > .triangle-inner{
+  left:10px;
+}
+.right-triangle > .triangle-inner{
+  left:-25px;
 }
 .image-overlay{
   position:absolute;
