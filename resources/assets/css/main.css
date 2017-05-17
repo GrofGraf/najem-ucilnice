@@ -100,11 +100,10 @@ h1{
   top:calc(50% - 50px);
 }
 .triangle-outer.left-triangle{
-  float:left;
-  margin-left:15px;
+  left:15px;
 }
 .triangle-outer.right-triangle{
-  float:right;margin-right:15px;
+  right:15px;
 }
 #carousel .triangle-inner{
   top:10px;
