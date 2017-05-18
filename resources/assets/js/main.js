@@ -5,34 +5,37 @@ function myMap() {
   var mapCanvas = document.getElementById("google-map");
   var mapOptions = {center: myCenter, zoom: 15, scrollwheel: false};
   map = new google.maps.Map(mapCanvas, mapOptions);
-  marker = new google.maps.Marker({
-    map:map,
-    position:myCenter,
-    icon:'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|9d89ba',
-  });
-  marker.setMap(map);
-  google.maps.event.addListener(marker,'click',function() {
-    if(map.getMapTypeId()=="roadmap"){
-      map.setZoom(20);
-      map.setMapTypeId("satellite");
-      map.setTilt(45);
-      map.setHeading(180);
-      map.setCenter(marker.getPosition());
-    }else{
-      map.setZoom(15);
-      map.setMapTypeId("roadmap");
-      map.setCenter(marker.getPosition());
-    }
-  });
+  if(!marker){
+    marker = new google.maps.Marker({
+      map:map,
+      position:myCenter,
+      icon:'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|9d89ba',
+    });
+    google.maps.event.addListener(marker,'click',function() {
+      if(map.getMapTypeId()=="roadmap"){
+        map.setZoom(20);
+        map.setMapTypeId("satellite");
+        map.setTilt(45);
+        map.setHeading(180);
+        map.setCenter(marker.getPosition());
+      }else{
+        map.setZoom(15);
+        map.setMapTypeId("roadmap");
+        map.setCenter(marker.getPosition());
+      }
+    });
+  }
 }
 
 function clickLocation(){
   smoothScroll("google-map");
   map.setCenter(marker.getPosition());
-  marker.setAnimation(google.maps.Animation.BOUNCE);
-  setTimeout(function(){
-    marker.setAnimation(null);
-  }, 700)
+  if(marker.getAnimation() == null){
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+    setTimeout(function(){
+      marker.setAnimation(null);
+    }, 700)
+  }
 }
 
 function sendEnquiry(){
