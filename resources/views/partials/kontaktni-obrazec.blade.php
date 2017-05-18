@@ -1,8 +1,11 @@
 <div id="kontakt">
   <div align="middle">
       <h1>NAJEM</h1>
-      <p>Ob dolgoročnem najemu se cena določi posebej. Glede na predvideno število ur najema, se priznavajo določeni popusti.</p>
-      <p>Pošljite povpraševanje.</p>
+      <p>
+        Ob dolgoročnem najemu se cena določi posebej. Glede na predvideno število ur najema, se priznavajo določeni popusti.
+        <br>
+        Pošljite povpraševanje.
+      </p>
     <div class="triangle-outer">
       <div class="triangle-inner"></div>
     </div>

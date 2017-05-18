@@ -7,38 +7,40 @@
       <title>Najem ucilnic</title>
       <link rel="stylesheet" href="{!! env('STATIC_URL') !!}/css/main.css">
     </head>
-    <body>
+    <body style="background-color:darkgray">
       @include('partials.navbar')
-      <div class="main-image">
-        <div class="image-overlay">
-          <div class="container" align="middle">
-            <h1>NAJEM UČILNICE</h1>
-            <div class="triangle-outer">
-              <div class="triangle-inner"></div>
+      <div class="main-container">
+        <div class="main-image">
+          <div class="image-overlay">
+            <div class="container" align="middle">
+              <h1>NAJEM UČILNICE</h1>
+              <div class="triangle-outer">
+                <div class="triangle-inner"></div>
+              </div>
             </div>
           </div>
         </div>
+        <div align="center" id="opis-storitve">
+          @include('partials.opis-storitve')
+        </div>
+        <div class="container">
+          @include("partials.kontaktni-obrazec")
+        </div>
+        <div id="cenik">
+          @include('partials.cenik')
+        </div>
+        <div id="slike">
+          @include('partials.slike')
+        </div>
+        <div id="koledar">
+          @include('partials.koledar')
+        </div>
+        <div id="o-nas">
+          @include('partials.kontaktne-informacije')
+        </div>
+        @include('partials.footer')
+        @include('partials.image-modal')
       </div>
-      <div align="center" id="opis-storitve">
-        @include('partials.opis-storitve')
-      </div>
-      <div class="container">
-        @include("partials.kontaktni-obrazec")
-      </div>
-      <div id="cenik">
-        @include('partials.cenik')
-      </div>
-      <div id="slike">
-        @include('partials.slike')
-      </div>
-      <div id="koledar">
-        @include('partials.koledar')
-      </div>
-      <div id="o-nas">
-        @include('partials.kontaktne-informacije')
-      </div>
-      @include('partials.footer')
-      @include('partials.image-modal')
 
       <script src="{!! env('STATIC_URL') !!}/js/main.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/sl.js"></script>

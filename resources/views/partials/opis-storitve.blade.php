@@ -8,25 +8,25 @@
       <div class="purple-box">
         <img class="icon" src="{!! env('STATIC_URL') !!}/images/icons/udelezenci.png" alt="45 udeležencev">
       </div>
-      do 45 udeležencev
+      <span style="line-height:3;">do 45 udeležencev</span>
     </div>
     <div class="col-xs-6 col-md-3">
       <div class="purple-box">
         <img class="icon" src="{!! env('STATIC_URL') !!}/images/icons/projektor.png" alt="projektor">
       </div>
-      lcd projektor
+      <span style="line-height:3;">lcd projektor</span>
     </div>
     <div class="col-xs-6 col-md-3">
       <div class="purple-box">
         <img class="icon" src="{!! env('STATIC_URL') !!}/images/icons/tabla.png" alt="magnetna tabla">
       </div>
-      magnetna tabla
+      <span style="line-height:3;">magnetna tabla</span>
     </div>
     <div class="col-xs-6 col-md-3">
       <div class="purple-box">
         <img class="icon" src="{!! env('STATIC_URL') !!}/images/icons/racunalnik.png" alt="prenosni računalnik">
       </div>
-      računalnik
+      <span style="line-height:3;">računalnik</span>
     </div>
   </div>
 </div>

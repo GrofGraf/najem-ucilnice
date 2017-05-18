@@ -5,7 +5,11 @@ function myMap() {
   var mapCanvas = document.getElementById("google-map");
   var mapOptions = {center: myCenter, zoom: 15, scrollwheel: false};
   map = new google.maps.Map(mapCanvas, mapOptions);
-  marker = new google.maps.Marker({position:myCenter});
+  marker = new google.maps.Marker({
+    map:map,
+    position:myCenter,
+    icon:'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|9d89ba',
+  });
   marker.setMap(map);
   google.maps.event.addListener(marker,'click',function() {
     if(map.getMapTypeId()=="roadmap"){
