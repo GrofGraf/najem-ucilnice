@@ -153,7 +153,7 @@ $(document).ready(function() {
       timeFormat: 'H:mm',
       eventSources: [{
         googleCalendarApiKey: 'AIzaSyCXmTSLmZC1tEEQ7v687YoMEJ1iKs3M8B4',
-        googleCalendarId: 'q7tmvoa5ttd6isafn1db8g16as@group.calendar.google.com',
+        googleCalendarId: 'inter-es.si_5f6a7g1c0mkj4sr9i570rp7j2c@group.calendar.google.com',
       }]
   })
 });
