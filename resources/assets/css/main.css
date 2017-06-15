@@ -1,5 +1,16 @@
 @font-face {
   font-family: 'Oswald';
+  src: url('../fonts/Oswald-Light/Oswald-Light.eot');
+  src: url('../fonts/Oswald-Light/Oswald-Light.woff2') format('woff2'),
+      url('../fonts/Oswald-Light/Oswald-Light.eot?') format('embedded-opentype'),
+      url('../fonts/Oswald-Light/Oswald-Light.svg#latoblack') format('svg'),
+      url('../fonts/Oswald-Light/Oswald-Light.woff') format('woff'),
+      url('../fonts/Oswald-Light/Oswald-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Oswald';
   src: url('../fonts/Oswald-Regular/Oswald-Regular.eot');
   src: url('../fonts/Oswald-Regular/Oswald-Regular.woff2') format('woff2'),
       url('../fonts/Oswald-Regular/Oswald-Regular.eot') format('embedded-opentype'),
@@ -24,8 +35,18 @@ html,body{
   margin:0;
   padding:0;
   background-color:#f8f8f8;
-  font-size:20px;
+  font-size:22px;
   font-family: Oswald;
+  font-weight:300;
+}
+.navbar{
+  font-weight:500;
+}
+a{
+  cursor: pointer;
+}
+.container{
+  max-width:970px;
 }
 sup{
   top:-.2em;
@@ -179,6 +200,9 @@ img{
   object-fit:cover;
   cursor:pointer;
 }
+#opis-storitve p{
+  font-weight:500;
+}
 #koledar{
   padding-bottom:60px;
 }
@@ -245,6 +269,9 @@ img.icon{
   background-color:white;
   border-radius:6px;
 }
+#cenik h1 small{
+  font-weight:300;
+}
 #cenik h3{
   margin-top:10px;
 }
@@ -304,7 +331,7 @@ h1, .h1{
   outline: 5px auto #7456a1;
 }
 #kontakt{
-  background-color:#D3D3D3;
+  background-color:#C0C0C0;
   padding-left:15px;
   padding-right:15px;
   border-radius:6px;
@@ -319,7 +346,7 @@ h1, .h1{
 }
 #o-nas{
   position:relative;
-  background-color:#222222;
+  background-color:	#484848;
   padding-top:15px;
   padding-bottom:15px;
 }

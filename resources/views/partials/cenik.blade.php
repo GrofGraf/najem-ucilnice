@@ -11,7 +11,7 @@
       <div class="purple-box">
         <h3>POLDNEVNI
           <br>
-          <small>2-4 ure</small>
+          <small>2 ——— 4 ure</small>
         </h3>
         <div class="white-line"></div>
         <h2>25
@@ -23,7 +23,7 @@
       <div class="purple-box">
         <h3>DNEVNI
           <br>
-          <small>5-8 ur</small>
+          <small>5 ——— 8 ur</small>
         </h3>
         <div class="white-line"></div>
         <h2>20

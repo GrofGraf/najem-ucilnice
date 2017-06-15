@@ -7,7 +7,7 @@
       <title>Najem ucilnic</title>
       <link rel="stylesheet" href="{!! env('STATIC_URL') !!}/css/main.css">
     </head>
-    <body style="background-color:darkgray">
+    <body style="background-color:#E8E8E8">
       @include('partials.navbar')
       <div class="main-container">
         <div class="main-image">

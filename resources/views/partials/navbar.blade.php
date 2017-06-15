@@ -7,15 +7,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="javascript:" onclick="smoothScroll('opis-storitve')">Najem Učilnice</a>
+      <a class="navbar-brand" onclick="smoothScroll('opis-storitve')">Najem Učilnice</a>
     </div>
     <div class="collapse navbar-collapse" id="navbar-collapse">
       <ul class="nav navbar-nav">
-        <li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="javascript:" onclick="smoothScroll('kontakt')">Kontakt</a></li>
-        <li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="javascript:" onclick="smoothScroll('cenik')">Cenik</a></li>
-        <li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="javascript:" onclick="smoothScroll('slike')">Slike</a></li>
-        <li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="javascript:" onclick="smoothScroll('koledar')">Koledar</a></li>
-        <li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="javascript:" onclick="smoothScroll('o-nas')">O nas</a></li>
+        <li data-toggle="collapse" data-target="#navbar-collapse.in"><a onclick="smoothScroll('kontakt')">Kontakt</a></li>
+        <li data-toggle="collapse" data-target="#navbar-collapse.in"><a onclick="smoothScroll('cenik')">Cenik</a></li>
+        <li data-toggle="collapse" data-target="#navbar-collapse.in"><a onclick="smoothScroll('slike')">Slike</a></li>
+        <li data-toggle="collapse" data-target="#navbar-collapse.in"><a onclick="smoothScroll('koledar')">Koledar</a></li>
+        <li data-toggle="collapse" data-target="#navbar-collapse.in"><a onclick="smoothScroll('o-nas')">O nas</a></li>
       </ul>
     </div>
   </div>
