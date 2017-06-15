@@ -17,15 +17,15 @@
         <div class="col-md-6">
           <div>
             <label for="name">IME in PRIIMEK</label>
-            <input type="text" class="form-control" name="name" required>
+            <input type="text" id="name" class="form-control" name="name" required>
           </div>
           <div>
             <label for="email">E-MAIL</label>
-            <input type="email" class="form-control" name="email" required>
+            <input type="email" id="email" class="form-control" name="email" required>
           </div>
           <div>
             <label for="type">VRSTA NAJEMA</label>
-            <select class="form-control" name="type" required>
+            <select class="form-control" id="type" name="type" required>
               <option value="Poldnevni najem učilnice">Poldnevni najem</option>
               <option value="Celodnevni najem učilnice">Celodnevni najem</option>
               <option value="Večdnevni najem učilnice">Večdnevni najem</option>
@@ -35,7 +35,7 @@
         </div>
         <div class="col-md-6">
           <label for="message">SPOROČILO</label>
-          <textarea class="form-control" name="message" required></textarea>
+          <textarea id="message" class="form-control" name="message" required></textarea>
         </div>
       </div>
       <div align="middle">

@@ -58,6 +58,13 @@ function sendEnquiry(){
       success.classList.remove('hidden-opacity');
     }
     xhttp.send(new FormData(form));
+    return;
+  }
+  var invalid = form.querySelector(':invalid');
+  var nav = document.getElementById("nav-header");
+  var navHeight = nav.getBoundingClientRect().height;
+  if(invalid && currentYPosition()+navHeight > elmYPosition(invalid.id)){
+    smoothScroll(invalid.id);
   }
 }
 
