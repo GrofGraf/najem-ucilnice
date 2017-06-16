@@ -80,7 +80,7 @@ h1{
   margin:auto;
 }
 .navbar-brand{
-  font-size:20px;
+  font-size:inherit;
 }
 .main-container{
   max-width:1680px;
@@ -372,7 +372,7 @@ h1, .h1{
   }
   .navbar-nav {
     display:table;
-    width: calc(100% - 132px);
+    width: calc(100% - 144px);
     margin: 0;
   }
   .navbar-nav > li {
@@ -382,6 +382,11 @@ h1, .h1{
   }
   .navbar-nav>li>a{
     padding-right:0;
+  }
+}
+@media (max-width: 1468px){
+  .main-image h1{
+    margin-top:150px;
   }
 }
 @media (max-width: 991px){
