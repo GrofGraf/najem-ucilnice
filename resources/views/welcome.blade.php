@@ -5,7 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
       <title>Najem ucilnic</title>
-      <link rel="stylesheet" href="{!! env('STATIC_URL') !!}/css/main.css">
+      <link rel="stylesheet" href="{!! env('STATIC_URL') !!}/css/main.css" media="none">
     </head>
     <body style="background-color:#E8E8E8">
       @include('partials.navbar')
@@ -42,6 +42,7 @@
         @include('partials.image-modal')
       </div>
 
+      <link rel="stylesheet" href="{!! env('STATIC_URL') !!}/css/main.css">
       <script src="{!! env('STATIC_URL') !!}/js/main.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/sl.js"></script>
       <script src="https://maps.googleapis.com/maps/api/js?key={!! env('GOOGLE_MAPS_KEY')!!}&callback=myMap"></script>
