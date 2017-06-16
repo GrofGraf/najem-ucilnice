@@ -43,7 +43,6 @@
       </div>
 
       <script src="{!! env('STATIC_URL') !!}/js/main.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/sl.js"></script>
-      <script src="https://maps.googleapis.com/maps/api/js?key={!! env('GOOGLE_MAPS_KEY')!!}&callback=myMap" async></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key={!! env('GOOGLE_MAPS_KEY')!!}&callback=myMap"></script>
     </body>
 </html>
