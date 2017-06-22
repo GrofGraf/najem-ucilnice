@@ -42,7 +42,7 @@
         @include('partials.image-modal')
       </div>
 
-      <script src="{!! env('STATIC_URL') !!}/js/main.js" async></script>
+      <script src="{!! env('STATIC_URL') !!}/js/main.js"></script>
       <script src="https://maps.googleapis.com/maps/api/js?key={!! env('GOOGLE_MAPS_KEY')!!}&callback=myMap" async></script>
     </body>
 </html>
